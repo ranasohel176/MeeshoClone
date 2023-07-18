@@ -15,7 +15,7 @@ const listofRecentEl = document.querySelector(".listofRecent")
 
 
 
-inputSearchEl  .addEventListener("keydown", () => {
+inputSearchEl.addEventListener("keydown", () => {
     // console.log(inputSearchEl)
     if (inputSearchEl.value) {
         document.getElementById("closeSearch").style.display = "block"
