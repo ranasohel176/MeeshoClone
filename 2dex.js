@@ -1,12 +1,12 @@
-import BagsFootwear from "./data/BagsFootwear";
-import BeautyHealth from "./data/BeautyHealth";
-import Electronics from "./data/Electronic";
-import HomeAndKitchen from "./data/HomeAndKitchen";
-import JewelleryAccessories from "./data/JewelleryAccessories";
-import Kids from "./data/Kids";
-import Men from "./data/Men";
-import WomenEthnic from "./data/WomenEthnic";
-import WomenWestern from "./data/WomenWestern";
+import BagsFootwear from "./data/BagsFootwear.js";
+import BeautyHealth from "./data/BeautyHealth.js";
+import Electronics from "./data/Electronic.js";
+import HomeAndKitchen from "./data/HomeAndKitchen.js";
+import JewelleryAccessories from "./data/JewelleryAccessories.js";
+import Kids from "./data/Kids.js";
+import Men from "./data/Men.js";
+import WomenEthnic from "./data/WomenEthnic.js";
+import WomenWestern from "./data/WomenWestern.js";
 
 let inputSearchEl = document.querySelector(".inputSearch")
 let recentInput = []
@@ -49,30 +49,57 @@ formInputEl.addEventListener("submit", (e) => {
 })
 
 /*function reuble*****/
+// function renderSubMenu(id, data) {
+//     let temp = document.getElementById(id)
+//     function TempFunc() {
+//         return data.map(el => {
+//             let list = "";
+//             list = el.data.map(element => `<p>${element}</p>`).join(" ")
+//             return `
+//         <div class="column">
+//             <h4>${el.heading}</h4>
+//             ${list}
+//         </div>
+//        `
+//         }).join("")
+//     }
+//     temp.innerHTML = TempFunc()
+// }
+
+
+
+
+
+
+// /****womenEthic */
+// renderSubMenu("womenEthic", WomenEthnic)
+
 function renderSubMenu(id, data) {
-    let temp = document.getElementById(id)
+    let temp = document.getElementById(id);
+  
     function TempFunc() {
-        return data.map(el => {
-            let list = "";
-            list = el.data.map(element => `<p>${element}</p>`).join(" ")
-            return `
-        <div class="column">
+      return data.map(el => {
+        let list = el.data.map(element => `<p>${element}</p>`).join(" ");
+        return `
+          <div class="column">
             <h4>${el.heading}</h4>
             ${list}
-        </div>
-       `
-        }).join("")
+          </div>
+        `;
+      }).join("");
     }
-    temp.innerHTML = TempFunc()
-}
-
-
-
-
-
-
-/****womenEthic */
-renderSubMenu("womenEthic", WomenEthnic)
+  
+    if (temp) {
+      temp.innerHTML = TempFunc();
+    } else {
+      console.error(`Element with ID "${id}" not found.`);
+    }
+  }
+  
+  // Example usage:
+  
+  
+  renderSubMenu("womenEthic", WomenEthnic);
 
 /****WomenWestern */
 renderSubMenu("womenWestern", WomenWestern)
