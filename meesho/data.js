@@ -289,4 +289,34 @@ export default[
         category : "watch",
         img : "watch_2.webp"
     },
+    {
+        id : "product_29",
+        name : "Comfy men vest",
+        desc : "Cartoon Character Light-Pink Digital LED Dial Waterproof Cartoon Character Kids Wristband for Boys & Girls Watches Digital LED Dial Waterproof Cartoon Character Kids Wristband for",
+        price : "148",
+        rating : "3.6",
+        review : "599",
+       
+        img : "vest_1.webp"
+    },
+    {
+        id : "product_30",
+        name : "Classic bed sheet",
+        desc : "Cartoon Character Light-Pink Digital LED Dial Waterproof Cartoon Character Kids Wristband for Boys & Girls Watches Digital LED Dial Waterproof Cartoon Character Kids Wristband for",
+        price : "350",
+        rating : "3.6",
+        review : "599",
+       
+        img : "bed_1.webp"
+    },
+    {
+        id : "product_31",
+        name : "Useful baby dipers",
+        desc : "Cartoon Character Light-Pink Digital LED Dial Waterproof Cartoon Character Kids Wristband for Boys & Girls Watches Digital LED Dial Waterproof Cartoon Character Kids Wristband for",
+        price : "304",
+        rating : "3.6",
+        review : "599",
+   
+        img : "dip.webp"
+    },
 ]

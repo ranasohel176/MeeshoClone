@@ -7,13 +7,24 @@ import Kids from "./data/Kids.js";
 import Men from "./data/Men.js";
 import WomenEthnic from "./data/WomenEthnic.js";
 import WomenWestern from "./data/WomenWestern.js";
+/*fixed nav*/
+const nav = document.querySelector('nav');
+let navTop = nav.offsetTop;
 
+function fixedNav() {
+  if (window.scrollY >= navTop) {    
+    nav.classList.add('fixed');
+  } else {
+    nav.classList.remove('fixed');    
+  }
+}
+/****** */
 let inputSearchEl = document.querySelector(".inputSearch")
 let recentInput = []
 let formInputEl = document.getElementById("inputForm")
 const listofRecentEl = document.querySelector(".listofRecent")
 
-
+window.addEventListener('scroll', fixedNav);
 
 inputSearchEl.addEventListener("keydown", () => {
     // console.log(inputSearchEl)
@@ -47,26 +58,6 @@ formInputEl.addEventListener("submit", (e) => {
         listofRecentEl.innerHTML = listofRecentHTMLEl
     }
 })
-
-/*function reuble*****/
-// function renderSubMenu(id, data) {
-//     let temp = document.getElementById(id)
-//     function TempFunc() {
-//         return data.map(el => {
-//             let list = "";
-//             list = el.data.map(element => `<p>${element}</p>`).join(" ")
-//             return `
-//         <div class="column">
-//             <h4>${el.heading}</h4>
-//             ${list}
-//         </div>
-//        `
-//         }).join("")
-//     }
-//     temp.innerHTML = TempFunc()
-// }
-
-
 
 
 
