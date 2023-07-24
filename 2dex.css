@@ -111,16 +111,16 @@ form{
 }
 .downloadBtn{
     display: block;
-    width: 180px;
+    width: 165px;
     margin-top: 5px;
 }
 .downloadHoverBtnContainer{
     position: absolute;
     bottom: 0;
     top:40px;
-    /* box-shadow: 0px 0px 5px rgba(0,0,0,0.3); */
+   
     width: 200px;
-    /* background-color: red; */
+   
     display: none;
     height: 200px;
     padding: 10px;
@@ -198,7 +198,7 @@ nav ul li{
     display: flex;
     align-items: center;
     margin: 0;
-    /* background-color: red; */
+
     border-bottom: 2px solid transparent;
     cursor: pointer; 
     
@@ -224,7 +224,7 @@ nav.fixed {
 /**module box submenu***/
 .subMenu{
     position: absolute;
-    /* height: 400px; */
+   
     top:51px;
     left: 100px;
     right: 0;
@@ -273,6 +273,7 @@ nav ul li:hover .subMenu{
 }
 .lowestPrice_image{
     width: 50%;
+    
 }
 .lowestPrice_icon{
     width: 30px;
@@ -486,6 +487,7 @@ nav ul li:hover .subMenu{
 }
 .meesho_supper_container{
     position: relative;
+    width: 91.2%;
 }
 .meesho_supper_container_content{
     position: absolute;
@@ -506,7 +508,7 @@ nav ul li:hover .subMenu{
 
 .Product_container_You{
     min-height: 500px;
-    /* background-color: #ccc; */
+   
     padding: 10px;
 }
 .product_container_you_content{
@@ -516,11 +518,11 @@ nav ul li:hover .subMenu{
     gap:30px;
 }
 .product_category_you_aside{
-    /* background-color: red; */
+  
     height: 100%;
 }
 .product_category_display{
-    /* background-color: green; */
+  
     height: 100%;
     display: grid;
     grid-template-columns: repeat(4,minmax(250px,1fr));
@@ -570,7 +572,7 @@ nav ul li:hover .subMenu{
     flex-direction: column;
 }
 .product_image img{
-    /* width: 200px; */
+   
     width: fit-content;
     height: 170px;
 }
@@ -739,17 +741,17 @@ nav ul li:hover .subMenu{
     line-height: 22px;
   }
   .lastDiv {
-    /* border: 1px solid red; */
+  
     width: 100%;
-    background-color: #f9f9f9;
+    background-color: rgb(248, 248, 255);
     margin-bottom: 50px;
   }
   
   #pink {
-    color: #f87fa9;
+    color: var(--hoverTextColor);
   }
   #bottomTrendindBar {
-    color: #f87fa9;
+    color: var(--hoverTextColor);
     line-height: 28px;
     cursor: pointer;
   }
